@@ -1,0 +1,59 @@
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Random Image</title>
+</head>
+<body>
+    <h1>Random Image</h1>
+    {% if image %}
+    <img src="{{ image.image.url }}" alt="Random Image">
+    {% else %}
+    <p>No images available.</p>
+    {% endif %}
+</body>
+</html> {% endcomment %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href={% static 'css/styles.css' %} />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+    <title>DiceGame</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">{{ comparison_result }}</h1>
+      <h2 class="sub-heading">Refresh Me!!!</h2>
+      <div class="dice">
+        <p>Player 1</p>
+        {% if dice1 %}
+            <img src="{{ dice1.image.url }}" alt="{{ dice1.image.description }}">
+        {% else %}
+            <p>No images available.</p>
+        {% endif %}
+      </div>
+      <div class="dice p2">
+        <p>Player 2</p>
+        {% if dice2 %}
+        <img src="{{ dice2.image.url }}" alt="{{ dice2.image.description }}">
+    {% else %}
+        <p>No images available.</p>
+    {% endif %}
+      </div>
+    </div>
+    <footer id="footer">©2023 🎲 Zeeshan Raza 🎲</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
+
