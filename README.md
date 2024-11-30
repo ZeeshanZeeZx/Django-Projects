@@ -1,5 +1,10 @@
 # Django-Projects
 
+--> Blings Bag Store Demo
+
+https://github.com/user-attachments/assets/293172f3-e3fd-4cbe-b1e4-25ba9c73c83e
+
+
 1) ToDo List
 
 https://github.com/user-attachments/assets/052837c5-8df1-41ea-84e9-50bcd1f34a86
